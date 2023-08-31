@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let a = 10;
+    let b = 20;
+    let c;
+
+    function Add() {
+
+        c = a + b;
+        console.log(c);
+        document.getElementById("a").value = c;
+    }
+
+    function Multiply() {
+        c = a * b;
+        console.log(c);
+        document.getElementById("a").value = c;
+    }
+
+    function Divide() {
+        c = a / b;
+        console.log(c);
+        document.getElementById("a").value = c;
+    }
+
+    function Substract() {
+        c = a - b;
+        console.log(c);
+        document.getElementById("a").value = c;
+    }
+</script>
+
+<body>
+    <input id="a" type="text" size="10px"></input>
+    <br>
+    <br>
+    <br>
+    <button onclick="Add()">Add</button>
+    <button onclick="Multiply()">Multiply</button>
+    <button onclick="Divide()">Divide</button>
+    <button onclick="Substract()">Substract</button>
+</body>
+
+</html>
