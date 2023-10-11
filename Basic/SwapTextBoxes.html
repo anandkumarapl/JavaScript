@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function doSwap() {
+        let x = document.getElementById("i");
+        let y = document.getElementById("j");
+        let z = x.value;
+        x.value = y.value;
+        y.value = z;
+    }
+</script>
+
+<body>
+    A<input type="text" id="i">
+    <br> B
+    <input type="text" id="j">
+    <br>
+    <input type="button" onclick="doSwap()" value="z">
+</body>
+
+</html>

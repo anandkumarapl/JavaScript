@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let book = {
+        bookname: "basic C",
+        subject: "C",
+        price: 100
+    };
+
+    function f() {
+        document.getElementById("Bookname").value = book.bookname;
+        document.getElementById("Subject").value = book.subject;
+        document.getElementById("price").value = book.price;
+    }
+
+    function f1() {
+        book.bookname = document.getElementById("Bookname").value;
+        book['subject'] = document.getElementById("Subject").value;
+        book.price = document.getElementById("price").value;
+
+    }
+</script>
+
+<body>
+    <input type="text" id="Bookname">
+    <br>
+    <input type="text" id="Subject">
+    <br>
+    <input type="text" id="price">
+    <br>
+    <button type="button" onclick="f()">Get</button>
+    <br>
+    <button type="button" onclick="f1()">Set</button>
+</body>
+
+</html>

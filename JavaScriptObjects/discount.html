@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="data"></p>
+</body>
+<script>
+    var book = {
+        name: "Basic C",
+        subject: "C",
+        price: 100,
+        discountedprice: function() {
+            return this.price - 10;
+        }
+    };
+    document.getElementById("data").innerHTML = book.discountedprice();
+</script>
+
+</html>

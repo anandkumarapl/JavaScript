@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function getByclassName() {
+        let ByclassName = document.getElementsByClassName("blue");
+        var n = ByclassName.length;
+        for (let i = 0; i <= n - 1; i++) {
+            ByclassName[i].value = "Blue"
+        }
+        ByclassName = document.getElementsByClassName("green");
+        var n = ByclassName.length;
+        for (var i = 0; i <= n - 1; i++) {
+            ByclassName[i].value = "Green";
+
+
+        }
+        ByclassName = document.getElementsByClassName("black");
+        for (let i = 0; i <= n - 1; i++) {
+            ByclassName[i].value = "Black";
+
+        }
+        ByclassName = document.getElementsByClassName("pink");
+        for (let i = 0; i <= n - 1; i++) {
+            ByclassName[i].value = "Pink"
+        }
+    }
+
+    function Clear() {
+        let clear = document.getElementsByClassName("green");
+        var n = clear.length;
+        for (let i = 0; i <= n - 1; i++) {
+            clear[i].value = "";
+        }
+        clear = document.getElementsByClassName("blue");
+        var n = clear.length;
+        for (let i = 0; i <= n - 1; i++) {
+            clear[i].value = "";
+        }
+    }
+</script>
+
+<body>
+    A<input type="text" class="blue" id="blue">
+    <br> B
+    <input type="text" class="black">
+    <br> C
+    <input type="text" class="green">
+    <br> D
+    <input type="text" class="pink">
+    <br>
+    <button onclick="getByclassName()" value="ByclassName">ByclassName</button>
+    <button onclick="Clear()" value="ByclassName">ByclassName</button>
+
+
+</body>
+
+</html>

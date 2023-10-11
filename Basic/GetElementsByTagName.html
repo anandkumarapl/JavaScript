@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function innerHtml() {
+        let name = document.getElementsByTagName("div");
+        var n = name.length;
+        for (let i = 0; i <= n - 1; i++) {
+            name[i].innerHTML = "Div";
+        }
+    }
+</script>
+
+<body>
+    <div type="text" id="div"></div>
+    <br>
+    <button onclick="innerHtml()" style="background-color: aqua;">Click</button>
+</body>
+
+</html>
