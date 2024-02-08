@@ -1,0 +1,14 @@
+<input type="text" id="num1">
+<input type="text" id="num2">
+<button onclick="Div()">Click</button>
+<input type="text" id="div">
+<script>
+    function Div() {
+        let x, y, z;
+        x = document.getElementById("num1").value;
+        y = document.getElementById("num2").value;
+        z = x / y;
+        document.getElementById("div").value = z;
+        console.log(z);
+    }
+</script>

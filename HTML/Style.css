@@ -1,0 +1,14 @@
+body {
+    background-color: aqua;
+}
+
+div {
+    background-color: rgba(244, 199, 199, 0.2);
+    border: dotted;
+    border-color: rgba(10, 9, 9, 1);
+    text-align: center;
+}
+
+#p {
+    background-color: blueviolet;
+}

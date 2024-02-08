@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+    font-size: 20px;
+    background-image: url("Image/A.jpg"), url("Image/B.jpg");
+    background-repeat: no-repeat;
+    background-position: left top right bottom;
+}
+
+.black-text {
+    color: rgb(1, 10, 10);
+}
+
+p {
+    color: rgba(226, 14, 163, 0.4);
+    font-size: 80px;
+}
+
+#p2 {
+    color: rebeccapurple;
+    font-size: 50px;
+}
+
+#p4 {
+    color: rgb(250, 185, 204);
+    font-size: 60px;
+}
+
+.green-text {
+    color: green;
+}
+
+#h {
+    font-size: 15px;
+}
+
+.underline-h {
+    text-decoration: underline;
+}

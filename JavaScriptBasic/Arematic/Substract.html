@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="x">
+    <input type="text" id="y">
+    <button onclick="Sub()">Button</button>
+    <input type="text" id="a">
+    <script>
+        function Sub() {
+            let x = document.getElementById("x").value;
+            let y = document.getElementById("y").value;
+            let z = x - y;
+            document.getElementById("a").value = z;
+        }
+    </script>
+</body>
+
+</html>
